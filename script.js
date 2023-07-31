@@ -24,7 +24,7 @@ searchInput.addEventListener('input', async () => {
 
 // Function to fetch movies from the OMDB API and returns empty array if found none.
 async function fetchMovies(searchQuery) {
-  const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${searchQuery}`);
+  const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchQuery}`);
  
   const data = await response.json();
   console.log(data);
