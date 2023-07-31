@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDb Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <h1>Imdb App</h1>
+      <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+  </nav>
+  <aside class="sidebar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#" onclick="showHindiMovies()" id="hindiMovies">Hindi Movies</a></li>
+      <li><a href="#" onclick="showFavorites()" id="favorites">Favorites</a></li>
+    </ul>
+  </aside>
+  <main>
+    <div id="moviesContainer">
+      <!-- Movie cards will be added here -->
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

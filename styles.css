@@ -1,0 +1,86 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ nav {
+   background-color: rgba(33, 145, 139, 0.995);
+   color: #F5F5DC;
+   padding: 10px;
+ }
+ 
+ .navbar {
+   max-width: 100vw;
+   position: relative;
+   height: 4vh;
+  }
+  .navbar h1{
+    text-align: center;
+  }
+ 
+ .navbar input {
+  position: absolute;
+   width:25%;
+   padding: 5px;
+   border-radius: 15px;
+   color: black;
+  right: 1%;
+  bottom: 50%;
+  transform: translateY(50%);
+  
+  }
+ 
+ aside.sidebar {
+  background-color:rgba(33, 145, 139, 0.25);
+   width: 200px;
+   float: left;
+   height: 100vh;
+ }
+ 
+ aside.sidebar ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ aside.sidebar li {
+   padding: 10px;
+ }
+ 
+ aside.sidebar li a {
+   text-decoration: none;
+   color: #333;
+   font-weight: bold;
+   
+ }
+ aside.sidebar li a:hover {
+  text-decoration: none;
+  color: #33333378;
+  font-weight: bold;
+  transition: .5s ease-in-out;
+}
+
+ main {
+   padding: 20px;
+   background-color:rgba(245, 245, 245, 0.645);
+ }
+ 
+ #moviesContainer {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 10px;
+   
+ }
+ 
+ .movie-card {
+   background-color: #f5f5f5;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .movie-card img {
+   width: 100%;
+   height: 280px;
+   border-radius: 5px;
+ }
