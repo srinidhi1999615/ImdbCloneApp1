@@ -95,7 +95,7 @@ function addToFavorites(movieID) {
 }
 // Function to fetch movie details using OMDB API
 async function fetchMovieDetails(movieID) {
-  const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${movieID}`);
+  const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${movieID}`);
   const data = await response.json();
   return data;
 }
